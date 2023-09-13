@@ -9,14 +9,14 @@ This is a simple project versioned in my way to learn FastAPI.
 To set up a development environment and run the code, follow these steps:
 
 ### 1. Clone the Repository
-git clone [URL]
+git clone https://github.com/DvpLoki/FastAPI.git
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
-# On Windows
+### On Windows
 python -m venv venv
 
 ### 3. Activate the Virtual Environment
-# On Windows
+### On Windows
 venv\Scripts\activate
 
 ### 4. Install Dependencies
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ### 5. Run the Code
  Replace App_v1.py with the name of the Python file containing  FastAPI code with appropriate version.
-## uvicorn App_v1.main:app --reload
+### uvicorn App_v1.main:app --reload
 
 
 
