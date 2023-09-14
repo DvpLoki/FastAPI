@@ -47,8 +47,14 @@ pip install -r requirements.txt
 - **Database Changes**: PostgreSQL database used for data storage.
 
 
-## Version 3: SQLAlchemy ORM and Alembic Data Migrations (Planned)
+## Version 3: SQLAlchemy ORM and Alembic Data Migrations
 - **Overview**: Version 3 plans to enhance the project with SQLAlchemy ORM and Alembic for data migrations.
-- **Endpoints**: (To be updated when implemented)
-- **Database Changes**: (To be updated when implemented)
-- **User Authentication**: (To be updated when implemented)
+- **Endpoints**: The same CRUD endpoints as in Version 1 wtih some parameters for get posts.
+- **Database Changes**: PostgreSQL database used for data storage.
+- **User Authentication**: added
+- **API authentication** : JWT based Authentication
+### in order to run this version below environment variables have to created
+- *DB_URL* :database url
+- *SECRET_key* :Master key for JWT
+- *Token_Expire_Time_Min* : Time for access token expiration
+- *Algorithm* : algorithm for JWT
