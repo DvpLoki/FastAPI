@@ -48,11 +48,25 @@ pip install -r requirements.txt
 
 
 ## Version 3: SQLAlchemy ORM 
-- **Overview**: Version 3 plans to enhance the project with SQLAlchemy ORM .
-- **Endpoints**: The same CRUD endpoints as in Version 1 wtih some parameters for get posts.
+- **Overview**: Version 3  enhanced the project with SQLAlchemy ORM .
+- **Endpoints**: The following CRUD endpoints are available:
+- **posts** :
+  - `POST /posts`: Create a new post.
+  - `GET /posts`: Retrieve all posts.
+  - `GET /posts/{id}`: Retrieve a post by ID.
+   - `GET /posts/latest`: Retrieve latest created posts.
+  - `PUT /posts/{id}`: Update a post by ID.
+  - `DELETE /posts/{id}`: Delete a post by ID.
+- **users** :
+  - `POST /users/` : create a new user.
+  - `GET /users/{id}` : retrieve user by id.
+- **login** : 
+  - `POST /login` : login authentication for users.
+
 - **Database Changes**: PostgreSQL database used for data storage.
-- **User Authentication**: added
+- **User Authentication**: added (only logged in user can perform CRUD operations )
 - **API authentication** : JWT based Authentication
+
 ### In order to run this version 3 below environment variables have to be created
 - *DB_URL* :database url
 - *SECRET_key* :Master key for JWT
